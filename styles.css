@@ -1,0 +1,272 @@
+
+/* Main Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+  color: #6a40b5;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #6a40b5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5632a8;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background-color: #f3f3f3;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+button.secondary:hover {
+  background-color: #e7e7e7;
+}
+
+button.danger {
+  background-color: #d43b3b;
+}
+
+button.danger:hover {
+  background-color: #b93232;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.alert {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.alert-error {
+  background-color: #fde8e8;
+  color: #c53030;
+  border: 1px solid #f8b4b4;
+}
+
+.alert-success {
+  background-color: #e6fffa;
+  color: #2c7a7b;
+  border: 1px solid #81e6d9;
+}
+
+/* Auth Pages */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.auth-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #6a40b5;
+  text-decoration: none;
+}
+
+/* Course List */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Quiz */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.option {
+  display: block;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  background-color: #f9f9f9;
+}
+
+.option.selected {
+  border-color: #6a40b5;
+  background-color: #f3f0ff;
+}
+
+.option.correct {
+  border-color: #48bb78;
+  background-color: #f0fff4;
+}
+
+.option.incorrect {
+  border-color: #e53e3e;
+  background-color: #fff5f5;
+}
+
+.difficulty {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.difficulty-easy {
+  background-color: #4ade80;
+  color: white;
+}
+
+.difficulty-medium {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.difficulty-hard {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Dashboard */
+.result-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.result-list th, .result-list td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.result-list th {
+  background-color: #f9fafb;
+}
+
+/* Admin */
+.admin-section {
+  margin-bottom: 30px;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #666;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #6a40b5;
+  color: #6a40b5;
+}
+
+.admin-form {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Header and Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #6a40b5;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
